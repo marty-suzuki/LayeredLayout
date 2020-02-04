@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		EDA5408723E9F114009A41C5 /* LayoutComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5408623E9F114009A41C5 /* LayoutComponent.swift */; };
 		EDA5408923E9F173009A41C5 /* LayoutHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5408823E9F173009A41C5 /* LayoutHolder.swift */; };
+		EDA5408B23E9F1F9009A41C5 /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5408A23E9F1F9009A41C5 /* LayoutBuilder.swift */; };
 		OBJ_24 /* LayeredLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* LayeredLayout.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* LayeredLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* LayeredLayoutTests.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		EDA5408623E9F114009A41C5 /* LayoutComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutComponent.swift; sourceTree = "<group>"; };
 		EDA5408823E9F173009A41C5 /* LayoutHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutHolder.swift; sourceTree = "<group>"; };
+		EDA5408A23E9F1F9009A41C5 /* LayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
 		"LayeredLayout::LayeredLayout::Product" /* LayeredLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LayeredLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"LayeredLayout::LayeredLayoutTests::Product" /* LayeredLayoutTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* LayeredLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredLayoutTests.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				OBJ_9 /* LayeredLayout.swift */,
 				EDA5408623E9F114009A41C5 /* LayoutComponent.swift */,
 				EDA5408823E9F173009A41C5 /* LayoutHolder.swift */,
+				EDA5408A23E9F1F9009A41C5 /* LayoutBuilder.swift */,
 			);
 			name = LayeredLayout;
 			path = Sources/LayeredLayout;
@@ -225,6 +228,7 @@
 				OBJ_24 /* LayeredLayout.swift in Sources */,
 				EDA5408723E9F114009A41C5 /* LayoutComponent.swift in Sources */,
 				EDA5408923E9F173009A41C5 /* LayoutHolder.swift in Sources */,
+				EDA5408B23E9F1F9009A41C5 /* LayoutBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
