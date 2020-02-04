@@ -14,3 +14,36 @@ public struct LayeredLayoutExtension<Base> {
         self.base = base
     }
 }
+
+#if canImport(UIKit)
+import UIKit
+
+extension LayeredLayoutExtension where Base: UIView {
+
+    @discardableResult
+    func add<Layout: LayoutHolder>(@LayoutBuilder builder: () -> Layout) -> UIView {
+        let layoutComponent = builder().layoutComponent
+        layoutComponent.views.forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            base.addSubview($0)
+        }
+        NSLayoutConstraint.activate(layoutComponent.constraints)
+        return base
+    }
+}
+
+extension LayeredLayoutExtension where Base: UIStackView {
+
+    @discardableResult
+    func addArranged<View: ViewType>(@LayoutBuilder builder: () -> View) -> UIView {
+        let layoutComponent = builder().layoutComponent
+        layoutComponent.views.forEach {
+            base.addArrangedSubview($0)
+        }
+        NSLayoutConstraint.activate(layoutComponent.constraints)
+        return base
+    }
+}
+
+extension UIView: LayeredLayoutCompatible {}
+#endif

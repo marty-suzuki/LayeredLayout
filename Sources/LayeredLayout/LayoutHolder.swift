@@ -20,7 +20,7 @@ extension NSLayoutConstraint: ConstrainitType {
     public var layoutComponent: LayoutComponent { .constraint(self) }
 }
 
-extension UIView: ViewType, LayeredLayoutCompatible {
+extension UIView: ViewType {
     public var layoutComponent: LayoutComponent { .view(self) }
 }
 
