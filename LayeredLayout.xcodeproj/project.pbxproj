@@ -52,6 +52,7 @@
 		EDA5408623E9F114009A41C5 /* LayoutComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutComponent.swift; sourceTree = "<group>"; };
 		EDA5408823E9F173009A41C5 /* LayoutHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutHolder.swift; sourceTree = "<group>"; };
 		EDA5408A23E9F1F9009A41C5 /* LayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
+		EDA5408C23E9F2F5009A41C5 /* LayeredLayout.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LayeredLayout.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		"LayeredLayout::LayeredLayout::Product" /* LayeredLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LayeredLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"LayeredLayout::LayeredLayoutTests::Product" /* LayeredLayoutTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* LayeredLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredLayoutTests.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
+				EDA5408C23E9F2F5009A41C5 /* LayeredLayout.playground */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
