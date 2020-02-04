@@ -21,7 +21,7 @@ import UIKit
 extension LayeredLayoutExtension where Base: UIView {
 
     @discardableResult
-    func add<Layout: LayoutHolder>(@LayoutBuilder builder: () -> Layout) -> UIView {
+    public func add<Layout: LayoutHolder>(@LayoutBuilder builder: () -> Layout) -> UIView {
         let layoutComponent = builder().layoutComponent
         layoutComponent.views.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -35,7 +35,7 @@ extension LayeredLayoutExtension where Base: UIView {
 extension LayeredLayoutExtension where Base: UIStackView {
 
     @discardableResult
-    func addArranged<View: ViewType>(@LayoutBuilder builder: () -> View) -> UIView {
+    public func addArranged<View: ViewType>(@LayoutBuilder builder: () -> View) -> UIView {
         let layoutComponent = builder().layoutComponent
         layoutComponent.views.forEach {
             base.addArrangedSubview($0)
